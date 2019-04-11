@@ -6,17 +6,29 @@ public class Bullet : MonoBehaviour {
 
     public int dir = 1;
     public float bSpeed = 6;
+    public float bLife;
     Rigidbody2D rb;
+
+    private void Start()
+    {
+        // bullet deletes itself after 5 seconds
+        Destroy(gameObject, bLife);
+    }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void ChangeDirection()
+    public void ChangeDirection()
     {
 
         dir *= -1;
+    }
+
+    public void ChangeColor(Color col)
+    {
+        GetComponent<SpriteRenderer>().color = col;
     }
 	
 	// Update is called once per frame

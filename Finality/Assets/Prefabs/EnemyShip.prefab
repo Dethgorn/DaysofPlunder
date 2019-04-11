@@ -99,11 +99,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf2b17c7a2547f458fd67e367de4ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: -8
+  bullet: {fileID: 1971555931029952, guid: b97fdde9e3e45254aba10bd75e81e777, type: 2}
+  bulletColor: {r: 0.9150943, g: 0.3702746, b: 0.047481313, a: 1}
+  health: 5
+  lifeTime: 10
+  xSpeed: -4
   ySpeed: 0
-  canShoot: 0
-  fireRate: 0
-  health: 2
+  canShoot: 1
+  fireRate: 2
 --- !u!212 &212158448790574212
 SpriteRenderer:
   m_ObjectHideFlags: 1

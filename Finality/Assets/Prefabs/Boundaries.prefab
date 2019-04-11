@@ -159,3 +159,4 @@ MonoBehaviour:
   waveSize: 3
   enemies:
   - {fileID: 1115814725154564, guid: e173e3329edd4774fb2b7cd41afde439, type: 2}
+  - {fileID: 1161099024085732, guid: 7a1513cde46d1a748ab7e2c36d0e7091, type: 2}

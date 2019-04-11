@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: 1
   bSpeed: 20
+  bLife: 3
 --- !u!212 &212819356091677338
 SpriteRenderer:
   m_ObjectHideFlags: 1
