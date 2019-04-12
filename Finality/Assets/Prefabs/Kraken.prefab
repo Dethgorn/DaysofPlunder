@@ -111,7 +111,7 @@ MonoBehaviour:
   medkit: {fileID: 1445217661125274, guid: 154fb840d44ea83468b1f0a87f9fa827, type: 2}
   boomClip: {fileID: 8300000, guid: 845ab01bba4578c43a9cccde333d912b, type: 3}
   health: 2
-  lifeTime: 6
+  lifeTime: 8
   xSpeed: -8
   ySpeed: 0
   canShoot: 0
