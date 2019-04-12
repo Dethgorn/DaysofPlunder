@@ -100,7 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1971555931029952, guid: b97fdde9e3e45254aba10bd75e81e777, type: 2}
+  explosion: {fileID: 1260152658814504, guid: 597a8cd3ae75eb24eb3fcf047089cf95, type: 2}
   bulletColor: {r: 0.9150943, g: 0.3702746, b: 0.047481313, a: 1}
+  score: 250
+  medkit: {fileID: 1445217661125274, guid: 154fb840d44ea83468b1f0a87f9fa827, type: 2}
   health: 5
   lifeTime: 10
   xSpeed: -4

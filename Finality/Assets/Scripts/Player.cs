@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
     Rigidbody2D rb;
     // expose some vars
     public float speed;
-    public GameObject bullet;
+    public GameObject bullet, explosion;
     int delay = 0;
     public int shotDelay = 5;
     public int health =3;
@@ -25,8 +25,8 @@ public class Player : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-       
-	}
+        PlayerPrefs.SetInt("Health", health);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -47,11 +47,24 @@ public class Player : MonoBehaviour {
     {
         // hp -1
         health--;
+        PlayerPrefs.SetInt("Health", health);
+        // start blink
+        StartCoroutine(Blink());
         // when hp runs out, die
         if(health ==0)
         {
-            Destroy(gameObject);
+            // go boom and die
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject, 0.1f);
         }
+    }
+
+    IEnumerator Blink()
+    {
+        // blink red once when hit
+        GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
     }
 
     void Shoot()
@@ -60,5 +73,11 @@ public class Player : MonoBehaviour {
         delay = 0;
         Instantiate(bullet, a.transform.position, Quaternion.identity);
         Instantiate(bullet, b.transform.position, Quaternion.identity);
+    }
+
+    public void AddHealth()
+    {
+        health++;
+        PlayerPrefs.SetInt("Health", health);
     }
 }

@@ -36,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1161099024085732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.360987, y: -15.615086, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 8.750706, y: 5.755557, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!50 &50791764699988560
 Rigidbody2D:
   serializedVersion: 4
@@ -105,7 +105,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 0}
+  explosion: {fileID: 1260152658814504, guid: 597a8cd3ae75eb24eb3fcf047089cf95, type: 2}
   bulletColor: {r: 0, g: 0, b: 0, a: 0}
+  score: 150
+  medkit: {fileID: 1445217661125274, guid: 154fb840d44ea83468b1f0a87f9fa827, type: 2}
   health: 2
   lifeTime: 6
   xSpeed: -8

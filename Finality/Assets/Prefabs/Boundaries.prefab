@@ -81,7 +81,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 13.39, y: 0}
+  m_Offset: {x: 25.7, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4e1076931ef6c43b21a67d109792aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 2
+  rate: 3
   waveSize: 3
   enemies:
   - {fileID: 1115814725154564, guid: e173e3329edd4774fb2b7cd41afde439, type: 2}

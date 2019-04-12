@@ -23,7 +23,7 @@ public class Spawn : MonoBehaviour {
         for (int i = 0; i < waveSize; i++)
         {
             // make an enemy at 18x somewhere on the y axis and facing left
-            Instantiate(enemies[Random.Range(0, enemies.Length)], new Vector3(18, Random.Range(-13, 13), 0), Quaternion.identity);
+            Instantiate(enemies[Random.Range(0, enemies.Length)], new Vector3(26, Random.Range(-13, 13), 0), Quaternion.identity);
         }
 	}
 }

@@ -6,8 +6,11 @@ public class Enemy : MonoBehaviour {
 
     Rigidbody2D rb;
 
-    public GameObject bullet;
+    public GameObject bullet, explosion;
     public Color bulletColor;
+
+    public int score;
+    public GameObject medkit;
 
     // expose vars
     [Header("HP & Life timer")]
@@ -81,7 +84,15 @@ public class Enemy : MonoBehaviour {
 
     void Die()
     {
+        if((int)Random.Range(0,3)==0)
+        {
+            Instantiate(medkit, transform.position, Quaternion.identity);
+        }
         // boom!
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        // add points
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + score);
+        // destroy go
         Destroy(gameObject);
     }
 
