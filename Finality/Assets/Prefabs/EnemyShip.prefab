@@ -104,6 +104,7 @@ MonoBehaviour:
   bulletColor: {r: 0.9150943, g: 0.3702746, b: 0.047481313, a: 1}
   score: 250
   medkit: {fileID: 1445217661125274, guid: 154fb840d44ea83468b1f0a87f9fa827, type: 2}
+  boomClip: {fileID: 8300000, guid: 845ab01bba4578c43a9cccde333d912b, type: 3}
   health: 5
   lifeTime: 10
   xSpeed: -4

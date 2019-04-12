@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f059258be3e223446a1f530ee7c58122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitClip: {fileID: 8300000, guid: e274736984b35e14c8e2fa5e2c9c2a44, type: 3}
   speed: 20
   bullet: {fileID: 1971555931029952, guid: b97fdde9e3e45254aba10bd75e81e777, type: 2}
   explosion: {fileID: 1260152658814504, guid: 51d6662266f356c40b838da9ff391e7a, type: 2}

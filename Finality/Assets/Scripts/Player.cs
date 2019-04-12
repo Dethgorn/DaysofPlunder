@@ -6,6 +6,8 @@ public class Player : MonoBehaviour {
 
     // bullet spawn points
     GameObject a, b;
+    // sound
+    public AudioClip hitClip;
 
     Rigidbody2D rb;
     // expose some vars
@@ -50,8 +52,9 @@ public class Player : MonoBehaviour {
         PlayerPrefs.SetInt("Health", health);
         // start blink
         StartCoroutine(Blink());
+        AudioSource.PlayClipAtPoint(hitClip, transform.position);
         // when hp runs out, die
-        if(health ==0)
+        if (health ==0)
         {
             // go boom and die
             Instantiate(explosion, transform.position, Quaternion.identity);

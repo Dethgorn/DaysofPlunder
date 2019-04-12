@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour {
     public int score;
     public GameObject medkit;
 
+    public AudioClip boomClip;
+
     // expose vars
     [Header("HP & Life timer")]
     public float health;
@@ -90,6 +92,7 @@ public class Enemy : MonoBehaviour {
         }
         // boom!
         Instantiate(explosion, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(boomClip, transform.position);
         // add points
         PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + score);
         // destroy go
